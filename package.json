@@ -1,0 +1,39 @@
+{
+  "name": "ho-conformance-nest",
+  "version": "0.0.0",
+  "description": "Monitors selector nesting levels",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "tape ./spec/*.js",
+    "build": "rm -rf dist && babel lib --out-dir dist",
+    "watch": "babel --watch lib --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattstyles/ho-conformance-nest.git"
+  },
+  "keywords": [
+    "ho",
+    "conformance",
+    "task",
+    "module",
+    "plugin"
+  ],
+  "author": "Matt Styles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattstyles/ho-conformance-nest/issues"
+  },
+  "homepage": "https://github.com/mattstyles/ho-conformance-nest",
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "core-js": "^0.8.3",
+    "ho-conformance-events": "^0.2.0",
+    "ho-conformance-base": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel": "^5.1.9",
+    "tape": "^4.0.0"
+  }
+}
